@@ -1,0 +1,276 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TVclock2026 Support</title>
+  <meta name="description" content="Support page for TVclock2026, a minimal macOS desktop clock app.">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #151b23;
+      --panel-2: #10161f;
+      --line: #2f3a48;
+      --text: #e6edf3;
+      --muted: #9aa8b6;
+      --accent: #64a7ff;
+      --accent-2: #7dd3c7;
+      --warning: #ffd166;
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(100, 167, 255, 0.16), transparent 34rem),
+        linear-gradient(180deg, #0b0f15 0%, var(--bg) 48%, #090c11 100%);
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .shell {
+      width: min(980px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(21, 27, 35, 0.78);
+      box-shadow: 0 22px 80px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(14px);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent-2);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 66px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    nav a,
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(16, 22, 31, 0.8);
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    main {
+      display: grid;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    section {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(21, 27, 35, 0.72);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.3rem;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .note {
+      border-left: 3px solid var(--warning);
+      padding: 12px 14px;
+      background: rgba(255, 209, 102, 0.08);
+      color: #f4e6bd;
+    }
+
+    code {
+      padding: 2px 6px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-2);
+      color: #dbeafe;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: min(100% - 24px, 980px);
+        padding: 28px 0;
+      }
+
+      header,
+      section {
+        padding: 20px;
+        border-radius: 14px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <p class="eyebrow">Support / macOS menu bar clock</p>
+      <h1>TVclock2026 Support</h1>
+      <p class="lead">TVclock2026 は、macOS のデスクトップ左上にミニマルなデジタル時計を表示するメニューバーアプリです。</p>
+      <nav aria-label="Page navigation">
+        <a href="#contact">問い合わせ</a>
+        <a href="#faq">FAQ</a>
+        <a href="#troubleshooting">トラブルシューティング</a>
+        <a href="../privacy/">プライバシーポリシー</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact">
+        <h2>問い合わせ</h2>
+        <p>不具合報告、機能要望、その他のサポートについては、以下のメールアドレスへご連絡ください。</p>
+        <p><a class="pill" href="mailto:tvclock2026@gmail.com">tvclock2026@gmail.com</a></p>
+        <p>問い合わせ時には、次の情報を含めると確認がスムーズです。</p>
+        <ul>
+          <li>macOS のバージョン</li>
+          <li>TVclock2026 のバージョン</li>
+          <li>発生した問題の内容</li>
+          <li>再現手順</li>
+          <li>可能であればスクリーンショット</li>
+        </ul>
+        <p class="note">App Store の購入・返金に関する手続きは、Apple の <a href="https://reportaproblem.apple.com/">Report a Problem</a> から行ってください。</p>
+      </section>
+
+      <div class="grid">
+        <section>
+          <h2>基本操作</h2>
+          <ul>
+            <li>メニューバーの時計からメニューを開けます。</li>
+            <li><code>時計を表示</code> をオフにすると、デスクトップ上の時計表示を停止します。</li>
+            <li><code>ログイン時に開く</code> をオンにすると、次回ログイン時からアプリを開きます。</li>
+            <li><code>終了</code> を選ぶとアプリを終了します。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>仕様</h2>
+          <ul>
+            <li>時計はすべての通常ウィンドウより上に表示されます。</li>
+            <li>マウスカーソルが時計領域に重なると、時計は一時的に非表示になります。</li>
+            <li>秒ラインは、1分の進行に合わせて左から右へ短くなります。</li>
+            <li>分が変わる直前には、数字がフリップ風に切り替わります。</li>
+          </ul>
+        </section>
+      </div>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <h3>時計が表示されません</h3>
+        <p>メニューバーのTVclock2026メニューで <code>時計を表示</code> がオンになっているか確認してください。マウスカーソルが時計領域に重なっている間は、時計は自動的に非表示になります。</p>
+
+        <h3>ログイン時に自動起動できますか？</h3>
+        <p>はい。メニューの <code>ログイン時に開く</code> をオンにしてください。ユーザーが明示的にオンにした場合のみ、macOS のログイン項目に登録されます。</p>
+
+        <h3>アプリを終了するには？</h3>
+        <p>メニューバーのTVclock2026メニューから <code>終了</code> を選択してください。</p>
+
+        <h3>アンインストールするには？</h3>
+        <p>まずメニューの <code>ログイン時に開く</code> をオフにしてからアプリを終了し、アプリケーション本体を削除してください。</p>
+      </section>
+
+      <section id="troubleshooting">
+        <h2>トラブルシューティング</h2>
+        <ul>
+          <li>時計が見えない場合は、メニューバーの表示トグルとマウス位置を確認してください。</li>
+          <li>ログイン時に開かない場合は、メニューの <code>ログイン時に開く</code> を一度オフにしてから、再度オンにしてください。</li>
+          <li>表示が乱れる場合は、アプリを終了して再起動してください。</li>
+          <li>問題が続く場合は、macOSバージョンと再現手順を添えてメールで連絡してください。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>English Summary</h2>
+        <p>TVclock2026 is a minimal macOS menu bar app that displays a digital clock on the desktop. For support, please contact tvclock2026@gmail.com and include your macOS version, app version, steps to reproduce, and screenshots if available.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>TVclock2026 Support / Last updated: May 8, 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
